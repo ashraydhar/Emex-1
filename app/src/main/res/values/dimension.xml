@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="btn_padding">34dp</dimen>
+    <dimen name="img_margin_horizontal">210dp</dimen>
+    <dimen name="img_logo_width">230dp</dimen>
+    <dimen name="img_logo_height">162dp</dimen>
+    <dimen name="img_magin_vertical">45dp</dimen>
+    <dimen name="btn_margin_vertical">60dp</dimen>
+    <dimen name="btn_margin_horizontal">40dp</dimen>
+    <dimen name="drawable_padding">15dp</dimen>
+    <dimen name="signup_pp_width">90dp</dimen>
+    <dimen name="signup_pp_height">90dp</dimen>
+    <dimen name="signup_pp_margin">135dp</dimen>
+    <dimen name="signup_pp_margin_top">22dp</dimen>
+</resources>

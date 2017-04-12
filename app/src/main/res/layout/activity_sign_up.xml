@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.keshav.emex.SignUpActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="@dimen/signup_pp_width"
+        android:layout_height="@dimen/signup_pp_height"
+        android:layout_marginEnd="@dimen/signup_pp_margin"
+        android:layout_marginStart="@dimen/signup_pp_margin"
+        android:layout_marginTop="@dimen/signup_pp_margin_top"
+        android:src="@drawable/user_placeholder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/EtTheme"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/icon_name"
+            android:layout_marginEnd="0dp"
+            android:hint="@string/first_name"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            style="@style/EtTheme"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="0dp"
+            android:drawableStart="@drawable/icon_name"
+            android:hint="@string/last_name"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+</LinearLayout>

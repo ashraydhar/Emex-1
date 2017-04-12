@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.keshav.emex.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="@dimen/img_logo_width"
+        android:layout_height="@dimen/img_logo_height"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/btnTheme"
+        android:layout_below="@+id/imgLogo"
+        android:layout_marginTop="@dimen/btn_margin_vertical"
+        android:text="@string/login" />
+
+    <Button
+        style="@style/btnTheme"
+        android:id="@+id/btnSignUp"
+        android:layout_below="@+id/btnLogin"
+        android:background="@drawable/btn_background"
+        android:text="@string/signup"
+        android:textColor="@color/colorAccent" />
+</RelativeLayout>
