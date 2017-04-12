@@ -4,40 +4,147 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.keshav.emex.SignUpActivity">
+    android:orientation="vertical">
 
     <include layout="@layout/toolbar" />
 
-    <com.makeramen.roundedimageview.RoundedImageView
-        android:layout_width="@dimen/signup_pp_width"
-        android:layout_height="@dimen/signup_pp_height"
-        android:layout_marginEnd="@dimen/signup_pp_margin"
-        android:layout_marginStart="@dimen/signup_pp_margin"
-        android:layout_marginTop="@dimen/signup_pp_margin_top"
-        android:src="@drawable/user_placeholder" />
-
-    <LinearLayout
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/margin_large"
+        android:layout_marginStart="@dimen/margin_large"
+        android:orientation="vertical"
+        tools:context="com.example.keshav.emex.SignUpActivity">
 
-        <EditText
-            style="@style/EtTheme"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:drawableStart="@drawable/icon_name"
-            android:layout_marginEnd="0dp"
-            android:hint="@string/first_name"
-            android:inputType="textEmailAddress" />
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:src="@drawable/user_placeholder" />
 
-        <EditText
-            style="@style/EtTheme"
-            android:layout_width="0dp"
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    style="@style/EtTheme"
+                    android:drawableStart="@drawable/icon_name"
+                    android:hint="@string/first_name"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <EditText
+                    style="@style/EtTheme"
+                    android:drawableStart="@drawable/icon_name"
+                    android:hint="@string/last_name" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/EtTheme"
+                android:drawableStart="@drawable/icon_contact"
+                android:hint="@string/contact_number"
+                android:inputType="number"
+                android:maxLength="@string/max_phone_no_length" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/EtTheme"
+                android:drawableStart="@drawable/icon_name"
+                android:hint="@string/contact_name" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/EtTheme"
+                android:drawableStart="@drawable/icon_email"
+                android:hint="@string/email_address"
+                android:inputType="textEmailAddress" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/EtTheme"
+                android:drawableStart="@drawable/icon_password"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <EditText
+                style="@style/EtTheme"
+                android:drawableStart="@drawable/icon_password"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/font_normal"
+                android:button="@drawable/checkbox_selector" />
+
+            <TextView
+                style="@style/TvTheme"
+                android:text="@string/i_accept"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            style="@style/btnTheme"
+            android:layout_marginBottom="@dimen/margin_normal"
             android:layout_weight="1"
-            android:layout_marginStart="0dp"
-            android:drawableStart="@drawable/icon_name"
-            android:hint="@string/last_name"
-            android:inputType="textPassword" />
+            android:text="@string/signup" />
     </LinearLayout>
-
 </LinearLayout>
