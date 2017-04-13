@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_medium"
+    android:background="@drawable/border_linear_layout"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_small">
+
+        <TextView
+            android:id="@+id/tvTimeOfJob"
+            style="@style/TvRowLayout"
+            android:layout_weight="1"
+            android:text="14 June, 2016 04:23 PM" />
+
+        <TextView
+            android:id="@+id/tvDistanceOfJob"
+            style="@style/TvRowLayout"
+            android:layout_gravity="end"
+            android:text="5.6 km" />
+    </LinearLayout>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_width_height"
+        android:background="@color/colorShadow" />
+
+    <TextView
+        android:id="@+id/tvDriverName"
+        style="@style/TvRowLayout"
+        android:layout_margin="@dimen/margin_small"
+        android:text="Driver name: Hitesh gupta"
+        android:textColor="@color/colorDark" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding_small"
+            android:src="@drawable/job_history_circle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView style="@style/TvRowLayout"
+                android:textColor="@color/colorShadow"
+                android:text="3846 W 38 Rd, Shiv Srishti Marg"/>
+            <TextView style="@style/TvRowLayout"
+                android:padding_Top="0dp"
+                android:textColor="@color/colorShadow"
+                android:text="Mumbai"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

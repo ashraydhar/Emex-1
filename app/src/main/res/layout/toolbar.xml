@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
+    android:layout_height="?attr/actionBarSize"
     android:background="@color/colorPrimaryDark"
-    >
-<TextView
-    style="@style/TvTheme"
-    android:id="@+id/tvTitle"
-    android:text="@string/signup"
-    android:textSize="20sp"
-    android:textColor="@color/colorPrimaryLight"/>
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/font_normal"
+        android:src="@drawable/ic_dehaze_black_24dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TvTheme"
+        android:layout_gravity="center_vertical"
+        android:text="Header of the Page here"
+        android:textColor="@color/colorPrimaryLight"
+        android:textSize="20sp" />
+
 
 </LinearLayout>

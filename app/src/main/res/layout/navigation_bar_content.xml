@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginEnd="@dimen/margin_medium"
+    android:layout_marginStart="@dimen/margin_medium"
+    android:orientation="vertical">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:src="@drawable/user_placeholder" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        style="@style/TvDarkTheme"
+        android:text="User Name"
+        android:textSize="@dimen/font_xxlarge" />
+
+    <TextView
+        style="@style/TvDarkTheme"
+        android:text="@string/edit_profile"
+        android:textColor="@color/colorShadow"
+        android:textSize="@dimen/font_large" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_weight="1"
+        android:button="@drawable/toggle_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/TvSideBarTheme"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:drawableStart="@drawable/icon_networks"
+            android:text="@string/network_view" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:button="@drawable/toggle_selector" />
+    </LinearLayout>
+
+    <TextView
+        style="@style/TvSideBarTheme"
+        android:id="@+id/tvPayment"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/icon_payment_pressed"
+        android:text="@string/payment" />
+
+    <TextView
+        style="@style/TvSideBarTheme"
+        android:id="@+id/tvJobHistory"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/icon_job_normal"
+        android:text="@string/job_history" />
+
+    <TextView
+        style="@style/TvSideBarTheme"
+        android:id="@+id/tvEmergencyContact"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/icon_emergency_normal"
+        android:text="@string/emergency_contact" />
+
+    <TextView
+        style="@style/TvSideBarTheme"
+        android:id="@+id/tvHelp"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/icon_help_normal"
+        android:text="@string/help" />
+
+    <TextView
+        android:id="@+id/tvLogout"
+        style="@style/TvSideBarTheme"
+        android:layout_weight="1"
+        android:drawableStart="@drawable/icon_logout_normal"
+        android:text="@string/logout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TvSideBarTheme"
+            android:gravity="center"
+            android:text="@string/support_via"
+            android:textColor="@color/colorShadow" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:button="@drawable/contact_call_selector" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:button="@drawable/contact_message_selector" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements Constants {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
+                Intent intent = new Intent(MainActivity.this, NavigationDrawerActivity.class);
                 startActivity(intent);
                 finish();
             }

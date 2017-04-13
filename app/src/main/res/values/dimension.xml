@@ -12,11 +12,23 @@
     <dimen name="margin_medium">15dp</dimen>
     <dimen name="margin_large">20dp</dimen>
     <dimen name="margin_xlarge">25dp</dimen>
+    <dimen name="margin_xxlarge">30dp</dimen>
+    <dimen name="margin_xxxlarge">45dp</dimen>
 
     <dimen name="padding_small">5dp</dimen>
     <dimen name="padding_normal">10dp</dimen>
     <dimen name="padding_medium">15dp</dimen>
     <dimen name="padding_large">20dp</dimen>
     <dimen name="padding_xlarge">25dp</dimen>
+
+    <dimen name="view_width_height">1dp</dimen>
+
+    <dimen name="shape_small">5dp</dimen>
+    <dimen name="shape_normal">10dp</dimen>
+    <dimen name="shape_medium">15dp</dimen>
+    <dimen name="shape_large">20dp</dimen>
+    <dimen name="shape_xlarge">25dp</dimen>
+
+
 
 </resources>

@@ -12,7 +12,7 @@
     <string name="contact_name">Contact Name</string>
     <string name="confirm_password">Confirm password</string>
     <string name="i_accept">I accept Terms of Service and Privacy Policy</string>
-    <string name="max_phone_no_length"></string>
+    <string name="max_phone_no_length">10</string>
     <string name="edit_profile">Edit Profile</string>
     <string name="network_view">Network View</string>
     <string name="payment">Payment</string>
@@ -21,4 +21,5 @@
     <string name="help">Help</string>
     <string name="logout">Logout</string>
     <string name="support_via">Support via Call/Email</string>
+    <string name="missed_jobs">Missed Jobs</string>
 </resources>
