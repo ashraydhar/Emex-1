@@ -33,15 +33,13 @@ public class MainActivity extends AppCompatActivity implements Constants {
             public void onClick(final View v) {
                 Intent intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                Intent intent = new Intent(MainActivity.this, NavigationDrawerActivity.class);
+                Intent intent = new Intent(MainActivity.this, SignUpActivity.class);
                 startActivity(intent);
-                finish();
             }
         });
     }
@@ -49,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements Constants {
     /**
      * initialize all variables
      */
+
     public void init() {
         btnSignUp = (Button) findViewById(R.id.btnLogin);
         btnLogin = (Button) findViewById(R.id.btnSignUp);
