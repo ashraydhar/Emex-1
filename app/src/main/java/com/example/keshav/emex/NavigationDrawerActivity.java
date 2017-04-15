@@ -1,5 +1,6 @@
 package com.example.keshav.emex;
 
+import android.os.Handler;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
@@ -18,9 +19,11 @@ import com.example.keshav.emex.constants.Constants;
  */
 public class NavigationDrawerActivity extends AppCompatActivity implements Constants {
 
+
     private TextView tvHeader, tvJobHistory;
     private DrawerLayout mDrawerLayout;
     private ImageView ivMenu;
+
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -37,12 +40,22 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Const
         tvJobHistory.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-                JobHistoryFragment jobHistoryFragment = new JobHistoryFragment();
-                FragmentManager fM = getSupportFragmentManager();
-                FragmentTransaction ft = fM.beginTransaction();
-                ft.replace(R.id.flDisplay, jobHistoryFragment);
-                ft.commit();
                 mDrawerLayout.closeDrawer(Gravity.START);
+
+
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        JobHistoryFragment jobHistoryFragment = new JobHistoryFragment();
+                        FragmentManager fM = getSupportFragmentManager();
+                        FragmentTransaction ft = fM.beginTransaction();
+                        ft.replace(R.id.flDisplay, jobHistoryFragment);
+                        ft.commit();
+
+                    }
+                }, DELAY);
+
+
             }
         });
 

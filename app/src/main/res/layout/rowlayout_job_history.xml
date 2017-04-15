@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="@dimen/padding_medium"
+    android:layout_margin="@dimen/margin_large"
     android:background="@drawable/border_linear_layout"
     android:orientation="vertical">
 
@@ -12,19 +12,19 @@
         android:padding="@dimen/padding_small">
 
         <TextView
-            android:id="@+id/tvTimeOfJob"
+            android:id="@+id/tvTimeDate"
             style="@style/TvRowLayout"
             android:layout_weight="1"
             android:text="14 June, 2016 04:23 PM" />
 
         <TextView
-            android:id="@+id/tvDistanceOfJob"
+            android:id="@+id/tvDistance"
             style="@style/TvRowLayout"
             android:layout_gravity="end"
             android:text="5.6 km" />
     </LinearLayout>
 
-    <view
+    <View
         android:layout_width="match_parent"
         android:layout_height="@dimen/view_width_height"
         android:background="@color/colorShadow" />
@@ -33,33 +33,115 @@
         android:id="@+id/tvDriverName"
         style="@style/TvRowLayout"
         android:layout_margin="@dimen/margin_small"
-        android:text="Driver name: Hitesh gupta"
+        android:text="Driver name: "
         android:textColor="@color/colorDark" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:padding="@dimen/padding_small"
-            android:src="@drawable/job_history_circle" />
+            android:orientation="vertical"
+            android:padding="@dimen/padding_small">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/job_history_circle" />
+
+            <View
+                android:id="@+id/vVerticalBar"
+                android:layout_width="@dimen/view_width_height"
+                android:layout_height="@dimen/shape_large"
+                android:layout_gravity="center"
+                android:background="@color/colorDark" />
+
+            <ImageView
+                android:id="@+id/vRedDot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:src="@drawable/job_history_destination_circle" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView style="@style/TvRowLayout"
-                android:textColor="@color/colorShadow"
-                android:text="3846 W 38 Rd, Shiv Srishti Marg"/>
-            <TextView style="@style/TvRowLayout"
-                android:padding_Top="0dp"
-                android:textColor="@color/colorShadow"
-                android:text="Mumbai"/>
+            <TextView
+                android:id="@+id/tvDriverLocation"
+                style="@style/TvRowLayout"
+                android:text="3846 W 38 Rd, Shiv Srishti Marg"
+                android:textColor="@color/colorShadow" />
+
+            <TextView
+                android:id="@+id/tvDriverLocationCity"
+                style="@style/TvRowLayout"
+                android:text="Mumbai"
+                android:textColor="@color/colorShadow" />
+
+            <TextView
+                android:id="@+id/tvDriverDestination"
+                style="@style/TvRowLayout"
+                android:text="3846 W 38 Rd, Shiv Srishti Marg"
+                android:textColor="@color/colorShadow" />
+
+            <TextView
+                android:id="@+id/tvDriverDestinationCity"
+                style="@style/TvRowLayout"
+                android:text="Mumbai"
+                android:textColor="@color/colorShadow" />
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llRideTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/TvRowLayout"
+            android:text="Ride Time: "
+            android:textColor="@color/colorShadow"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvRideTime"
+            style="@style/TvRowLayout"
+            android:text="20 min"
+            android:textColor="@color/colorShadow"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_width_height"
+        android:layout_margin="@dimen/margin_small"
+        android:background="@color/colorShadow" />
+
+    <LinearLayout
+        android:id="@+id/llPaymentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding_small">
+
+        <TextView
+            style="@style/TvRowLayout"
+            android:layout_weight="1"
+            android:text="Total Payable Amount" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            style="@style/TvRowLayout"
+            android:layout_gravity="end"
+            android:text="1832.0" />
     </LinearLayout>
 
 </LinearLayout>

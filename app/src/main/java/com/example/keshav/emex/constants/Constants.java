@@ -6,9 +6,12 @@ package com.example.keshav.emex.constants;
 
 public interface Constants {
     int SPLASH_TIMER = 3000;
+    int DELAY = 250;
+    int MISSEDJOB = 1;
+    int HISTORYJOB = 0;
 
     /**
-     * initilize function
+     * initialize function
      */
     void init();
 }
