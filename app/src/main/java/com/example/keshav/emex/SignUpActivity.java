@@ -1,7 +1,7 @@
 package com.example.keshav.emex;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.keshav.emex.constants.Constants;
@@ -9,7 +9,7 @@ import com.example.keshav.emex.constants.Constants;
 /**
  * signUp activity takes user info
  */
-public class SignUpActivity extends AppCompatActivity implements Constants {
+public class SignUpActivity extends Base {
     private TextView tvHeader;
 
     @Override
@@ -23,5 +23,10 @@ public class SignUpActivity extends AppCompatActivity implements Constants {
     @Override
     public void init() {
         tvHeader = (TextView) findViewById(R.id.tvTitle);
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
