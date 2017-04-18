@@ -141,8 +141,8 @@
 
         <Button
             style="@style/btnTheme"
+            android:id="@+id/btnSignUp"
             android:layout_marginBottom="@dimen/margin_normal"
-            android:layout_weight="1"
             android:text="@string/signup" />
     </LinearLayout>
 </LinearLayout>

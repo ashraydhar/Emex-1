@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.keshav.emex.Fragment.HomeFragment;
 import com.example.keshav.emex.Fragment.JobHistoryFragment;
 import com.example.keshav.emex.constants.Constants;
 
@@ -30,6 +31,12 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Const
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation_drawer);
         init();
+        HomeFragment homeFragment = new HomeFragment();
+        FragmentManager fM = getSupportFragmentManager();
+        FragmentTransaction ft = fM.beginTransaction();
+        ft.replace(R.id.flDisplay, homeFragment);
+        ft.commit();
+
         tvHeader.setText(R.string.app_name);
         ivMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +72,7 @@ public class NavigationDrawerActivity extends AppCompatActivity implements Const
     public void init() {
         tvHeader = (TextView) findViewById(R.id.tvTitle);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.dl_side_menu);
-        ivMenu = (ImageView) findViewById(R.id.btnMenu);
+        ivMenu = (ImageView) findViewById(R.id.ivMenu);
         tvJobHistory = (TextView) findViewById(R.id.tvJobHistory);
     }
 }

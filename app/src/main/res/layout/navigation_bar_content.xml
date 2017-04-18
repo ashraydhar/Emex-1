@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginEnd="@dimen/margin_medium"
-    android:layout_marginStart="@dimen/margin_medium"
+    android:layout_marginEnd="@dimen/margin_large"
+    android:layout_marginStart="@dimen/margin_large"
     android:orientation="vertical">
 
     <com.makeramen.roundedimageview.RoundedImageView
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="@dimen/margin_normal"
-        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_xxlarge"
         android:src="@drawable/user_placeholder" />
 
     <TextView

@@ -22,4 +22,9 @@
     <string name="logout">Logout</string>
     <string name="support_via">Support via Call/Email</string>
     <string name="missed_jobs">Missed Jobs</string>
+    <string name="google_maps_api_key">AIzaSyDaG0IAFzMVb93Q6klmFNm1_n2U4WBeSLw</string>
+    <string name="title_location_permission">GPS Permission</string>
+    <string name="text_location_permission">GPS is required to be enabled for this section to get your location</string>
+    <string name="ok">OK</string>
+
 </resources>

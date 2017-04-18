@@ -23,7 +23,7 @@
         <item name="android:textSize">@dimen/font_large</item>
         <item name="android:textColor">@color/colorAccent</item>
         <item name="android:colorControlNormal">@color/colorShadow</item>
-        <item name="android:drawablePadding">@dimen/margin_small</item>
+        <item name="android:drawablePadding">@dimen/margin_normal</item>
     </style>
 
     <style name="TvTheme">
@@ -41,6 +41,7 @@
         <item name="android:textColor">@color/colorDark</item>
         <item name="android:gravity">center</item>
     </style>
+
     <style name="TvRowLayout">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -52,7 +53,7 @@
     <style name="TvSideBarTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">@dimen/font_xlarge</item>
+        <item name="android:textSize">@dimen/font_large</item>
         <item name="android:textColor">@color/colorDark</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:drawablePadding">@dimen/padding_small</item>

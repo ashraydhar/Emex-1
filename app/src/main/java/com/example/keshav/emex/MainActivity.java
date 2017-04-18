@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Switch;
 import android.widget.Toast;
 
 
@@ -26,6 +25,8 @@ public class MainActivity extends Base {
             public void run() {
                 btnSignUp.setVisibility(View.VISIBLE);
                 btnLogin.setVisibility(View.VISIBLE);
+                btnLogin.setOnClickListener(MainActivity.this);
+                btnSignUp.setOnClickListener(MainActivity.this);
             }
         }, SPLASH_TIMER);
 
@@ -44,15 +45,15 @@ public class MainActivity extends Base {
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(final View v) {
         int id = v.getId();
         switch (id) {
-            case (R.id.btnSignUp):
-                intent = new Intent(MainActivity.this, LoginActivity.class);
+            case R.id.btnSignUp:
+                intent = new Intent(MainActivity.this, SignUpActivity.class);
                 startActivity(intent);
                 break;
-            case (R.id.btnLogin):
-                intent = new Intent(MainActivity.this, SignUpActivity.class);
+            case R.id.btnLogin:
+                intent = new Intent(MainActivity.this, LoginActivity.class);
                 startActivity(intent);
                 break;
             default:

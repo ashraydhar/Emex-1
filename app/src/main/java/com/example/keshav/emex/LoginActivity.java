@@ -18,6 +18,7 @@ public class LoginActivity extends Base {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         init();
+        btnLogin.setOnClickListener(LoginActivity.this);
     }
 
 
@@ -27,10 +28,10 @@ public class LoginActivity extends Base {
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(final View v) {
         int id = v.getId();
         switch (id) {
-            case (R.id.btnLogin):
+            case R.id.btnLogin:
                 intent = new Intent(LoginActivity.this, NavigationDrawerActivity.class);
                 startActivity(intent);
                 finish();
