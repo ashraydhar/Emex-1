@@ -86,6 +86,8 @@ public class HomeFragment extends Fragment implements OnMapReadyCallback, Consta
                             @Override
                             public void onClick(final DialogInterface dialogInterface, final int i) {
                                 //Prompt the user once explanation has been shown
+
+
                                 request();
 //                                ActivityCompat.requestPermissions(getActivity(),
 //                                        new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, MY_LOCATION_REQUEST_CODE);
